@@ -1,0 +1,14 @@
+{
+  "name": "angular2-random-names",
+  "version": "1.0.0",
+  "description": "A random sample angular2 application that generates random information to test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.4.1"
+  }
+}

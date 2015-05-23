@@ -1,0 +1,35 @@
+<h1>Angular 2 Demo</h1>
+<p>A random name is <strong><u>{{ randomName }}</u></strong> and url is <a [href]="randomUrl">{{randomUrl}}</a></p>
+
+
+<table *if="items" class="table table-bordered table-hover">
+
+    <tr>
+        <th></th>
+        <th>First Name</th>
+        <th>Surname</th>
+        <th>Gender</th>
+        <th>Birthday</th>
+        <th></th>
+    </tr>
+
+    <tr *for="#item of items; #i = index;">
+        <td><i class="fa" [class.fa-male]="item.gender == 'Male'" [class.fa-female]="item.gender == 'Female'"></i></td>
+        <td>{{ item.firstName }}</td>
+        <td>{{ item.surname }}</td>
+        <td>{{ item.gender }}</td>
+        <td>{{ item.dateOfBirth }}</td>
+        <td><button class="btn btn-danger" (click)="removeItem(i)">
+            <i class="fa fa-times"></i>
+        </button></td>
+    </tr>
+
+    <tr *if="items.length == 0">
+        <td colspan="5">
+            There are no <strong>items</strong> to be displayed
+        </td>
+    </tr>
+</table>
+
+<button (click)="insertNew()" class="btn btn-default">Insert New</button>
+<button (click)="insertNew(5)" class="btn btn-default">Insert 5 New</button>
