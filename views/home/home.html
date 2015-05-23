@@ -20,12 +20,12 @@
         <td>{{ item.gender }}</td>
         <td>{{ item.dateOfBirth }}</td>
         <td><button class="btn btn-danger" (click)="removeItem(i)">
-            <i class="fa fa-times"></i>
+            <i (click)="removeItem(i)" class="fa fa-times"></i>
         </button></td>
     </tr>
 
     <tr *if="items.length == 0">
-        <td colspan="5">
+        <td colspan="6">
             There are no <strong>items</strong> to be displayed
         </td>
     </tr>

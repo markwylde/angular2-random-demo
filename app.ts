@@ -29,7 +29,7 @@ export class MyAppComponent {
     }
 
     insertNew(amount?:number) {
-        if (!amount) {
+        if (!amount == undefined) {
             amount = 1;
         }
 

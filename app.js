@@ -24,7 +24,7 @@ var MyAppComponent = (function () {
         };
     }
     MyAppComponent.prototype.insertNew = function (amount) {
-        if (!amount) {
+        if (!amount == undefined) {
             amount = 1;
         }
         var gender = chance.gender();
