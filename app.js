@@ -23,7 +23,7 @@ var MyAppComponent = (function () {
             'fa-venus': true
         };
     }
-    MyAppComponent.prototype.insertNew = function (amount, number) {
+    MyAppComponent.prototype.insertNew = function (amount) {
         if (!amount) {
             amount = 1;
         }

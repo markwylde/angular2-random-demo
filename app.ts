@@ -28,7 +28,7 @@ export class MyAppComponent {
         }
     }
 
-    insertNew(amount:?number) {
+    insertNew(amount?:number) {
         if (!amount) {
             amount = 1;
         }
@@ -54,6 +54,7 @@ export class MyAppComponent {
 class Person {
     firstName: string;
     surname: string;
+    gender: string;
     dateOfBirth: Date;
 
     constructor(data) {
