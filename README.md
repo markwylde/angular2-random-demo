@@ -11,4 +11,4 @@ By using `chancejs` it generates a few new rows into a table with random names, 
     
 Screenshot
 ------
-![Screenshot](http://s4.postimg.org/ljxufuud8/Screen_Shot_2015_05_23_at_23_11_41.jpg)
+![Screenshot](http://i.imgur.com/v6RYw3U.png)
